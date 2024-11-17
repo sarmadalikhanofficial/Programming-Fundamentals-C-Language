@@ -17,7 +17,7 @@ int main()
     
     printf("Sum is %d \n" , sum);
     
-    if(sum >= 400)  //sum greater than or equal to 270 (highest grade)
+    if(sum >= 400)  //sum greater than or equal to 400 (highest grade)
     {
         printf("Your Grade is A\n");
     }
