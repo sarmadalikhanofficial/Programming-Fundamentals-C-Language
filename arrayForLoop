@@ -1,0 +1,18 @@
+#include <stdio.h>
+#define N  5  /* Number of students in class */
+int main(void)
+{
+   int grade[N];  /* declare array with N elements */
+   int i;
+   /* Enter the grades for a quiz */
+   for (i = 0; i < N; i++) {
+      printf("Enter quiz grade %d: ", i + 1);
+      scanf("%d", &grade[i]);
+      
+   }
+   /* display the grades that were entered */
+   printf("Here are the grades that were entered\n");
+   for (i = 0; i < N; i++) {
+      printf("Grade %d is %d\n", i + 1, grade[i]);
+   }
+}
