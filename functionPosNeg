@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+// Function to check if a number is positive, negative, or zero
+void checkNumber(int num) {
+    if (num > 0) {
+        printf("The number is positive.\n");
+    } else if (num < 0) {
+        printf("The number is negative.\n");
+    } else {
+        printf("The number is zero.\n");
+    }
+}
+
+int main() {
+    int number;
+
+    // Get the number from the user
+    printf("Enter an integer: ");
+    scanf("%d", &number);
+
+    // Call the function to check the number
+    checkNumber(number);
+
+    return 0;
+}
