@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+// Function prototype
+float area(float);
+
+int main()
+{
+    float r, result;
+
+    printf("Enter radius: ");
+    scanf("%f", &r);
+
+    result = area(r); // Function call
+    printf("Area = %.2f\n", result);
+
+    return 0;
+}
+
+// Function definition
+float area(float radius)
+{
+    const float PI = 3.14;
+    return PI * radius * radius;
+}
