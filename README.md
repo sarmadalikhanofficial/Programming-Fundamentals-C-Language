@@ -28,4 +28,4 @@ To begin using this repository, you need to clone it to your local machine.
 ### Clone the Repository:
 
 ```bash
-git clone https://github.com/yourusername/c-programming-projects.git
+git clone https://github.com/sarmadalikhanofficial/c.git
