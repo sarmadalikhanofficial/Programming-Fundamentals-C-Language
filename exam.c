@@ -173,8 +173,79 @@ int main() {
 
 
 
+// Q7. Write a recursive function to find the factorial of a number?
+
+#include <stdio.h>
+
+// Recursive function to calculate factorial of a number
+int factorial(int n) {
+    if (n == 0)  // Base case: factorial of 0 is 1
+        return 1;
+    else  // Recursive case: factorial of n is n * factorial(n-1)
+        return n * factorial(n - 1);
+}
+
+int main() {
+    int result = factorial(9);  // Function call
+    printf("Factorial: %d\n", result);
+    return 0;
+}
 
 
+
+
+
+
+
+
+
+// Q8. Write a recursive function to find the sum of all elements in an array?
+
+#include <stdio.h>
+
+// Recursive function to find sum of elements in an array
+int sumArray(int arr[], int n) {
+    // Base case: if array is empty, return 0
+    if (n <= 0) {
+        return 0;
+    } else {
+        // Recursive case: sum of the current element and the sum of the rest of the array
+        return arr[n-1] + sumArray(arr, n-1);
+    }
+}
+
+int main() {
+    int arr[] = {1, 2, 3, 4, 5};  // Example array
+    int n = sizeof(arr) / sizeof(arr[0]);  // Calculate number of elements in array
+    int result = sumArray(arr, n);  // Function call to calculate sum
+    printf("Sum of array elements: %d\n", result);  // Output the result
+    return 0;
+}
+
+
+
+
+// Q9. Errors Finding?
+
+// Syntax:
+
+#include <stdio.h>
+	int main() {
+	int a = 5	//;
+	printf("Value of a: %d\n", a);
+	return 0;
+}
+
+
+// Logical:
+
+#include <stdio.h>
+	int main() {
+	int a = 5, b = 10, sum;
+	sum = a - b;	//+
+	printf("The sum is: %d\n", sum);
+	return 0;
+}
 
 
 
