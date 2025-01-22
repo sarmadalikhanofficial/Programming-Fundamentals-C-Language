@@ -28,6 +28,10 @@ int main() {
 }
 
 
+
+
+
+
 //Q2. Write a program to convert all lowercase characters of a string to uppercase?
 #include <stdio.h>
 #include<string.h>
@@ -45,6 +49,10 @@ int main() {
 
     return 0;
 }
+
+
+
+
 
 
 //Q3. Write a program to declare a pointer,
@@ -67,10 +75,95 @@ int main() {
 
 
 
+//Q4. Write a program to find the sum of all elements in an array using a pointer.
+
+#include <stdio.h>
+
+int main() {
+    int arr[] = {1, 2, 3, 4, 5}; // Array of integers
+    int *ptr = arr;              // Pointer pointing to the first element of the array
+    int sum = 0, i;
+
+    // Calculate the sum using the pointer
+    for (i = 0; i < 5; i++) {
+        sum += *(ptr + i); // Access elements using the pointer
+    }
+
+    printf("Sum of array elements: %d\n", sum);
+    return 0;
+}
 
 
 
 
+
+
+
+
+
+
+// Q5. Write a program to input 5 integers into an array and display them?
+
+#include <stdio.h>
+
+int main() {
+    int arr[5];
+    int i;
+
+    // Input 5 integers
+    printf("Enter 5 integers:\n");
+    for (i = 0; i < 5; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    // Display the integers
+    printf("The entered integers are:\n");
+    for (i = 0; i < 5; i++) {
+        printf("%d ", arr[i]);
+    }
+
+    return 0;
+}
+
+
+
+
+
+
+
+
+// Q6. Write a program to sort an array in ascending order? (BUBBLESORT)
+
+#include <stdio.h>
+
+int main() {
+    int arr[5], i, j, temp;
+
+    // Input 5 integers
+    printf("Enter 5 integers:\n");
+    for (i = 0; i < 5; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    // Sorting in ascending order
+    for (i = 0; i < 5 - 1; i++) {
+        for (j = 0; j < 5 - i - 1; j++) {
+            if (arr[j] > arr[j + 1]) { // Swap if elements are out of order
+                temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+        }
+    }
+
+    // Display sorted array
+    printf("Sorted array in ascending order:\n");
+    for (i = 0; i < 5; i++) {
+        printf("%d ", arr[i]);
+    }
+
+    return 0;
+}
 
 
 
