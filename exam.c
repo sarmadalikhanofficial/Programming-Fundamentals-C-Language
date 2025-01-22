@@ -255,6 +255,65 @@ int main() {
 
 
 
+// Q10. Write a program to input and display a 2D array of size 3x3?
+
+#include <stdio.h>
+
+int main() {
+    int arr[3][3];  // Declare a 2D array of size 3x3
+    
+    // Input elements for the 2D array
+    printf("Enter elements for the 3x3 array:\n");
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            printf("Enter element at position (%d, %d): ", i+1, j+1);
+            scanf("%d", &arr[i][j]);
+        }
+    }
+    
+    // Display the 2D array
+    printf("\nThe 3x3 array is:\n");
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            printf("%d ", arr[i][j]);
+        }
+        printf("\n");
+    }
+    
+    return 0;
+}
+
+
+
+
+
+// Q11. Write a program to find the maximum and minimum elements in a 2D array?
+
+#include <stdio.h>
+
+int main() {
+    int arr[3][3], max, min;
+    
+    printf("Enter 9 elements for the 3x3 array:\n");
+    for (int i = 0; i < 3; i++)
+        for (int j = 0; j < 3; j++)
+            scanf("%d", &arr[i][j]);
+    
+    max = min = arr[0][0];
+    for (int i = 0; i < 3; i++)
+        for (int j = 0; j < 3; j++) {
+            if (arr[i][j] > max)
+		    max = arr[i][j];
+            if (arr[i][j] < min)
+		    min = arr[i][j];
+        }
+    
+    printf("Max: %d, Min: %d\n", max, min);
+    return 0;
+}
+
+
+
 
 
 
